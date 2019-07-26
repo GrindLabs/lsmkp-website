@@ -10,6 +10,7 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { ThemeProvider } from '@material-ui/styles';
 import Header from './header';
+import Footer from './footer';
 import theme from '../theme';
 
 const Layout = ({ children }) => (
@@ -27,7 +28,7 @@ const Layout = ({ children }) => (
       <ThemeProvider theme={theme}>
         <Header title={data.site.siteMetadata.title} />
         <main>{children}</main>
-        <footer />
+        <Footer />
       </ThemeProvider>
     )}
   />
