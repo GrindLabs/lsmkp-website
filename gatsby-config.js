@@ -42,11 +42,11 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-source-instagram-all`,
-      options: {
-        access_token: '219491363.cb83056.e9e48396823e409a8b95019c958da7fa',
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-instagram-all`,
+    //   options: {
+    //     access_token: '219491363.cb83056.e9e48396823e409a8b95019c958da7fa',
+    //   },
+    // },
   ],
 };

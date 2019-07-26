@@ -6,6 +6,8 @@ import Studio from '../components/studio';
 import Portfolio from '../components/portfolio';
 import Brides from '../components/brides';
 import Schedule from '../components/schedule';
+import ContactUs from '../components/contactus';
+import Footer from '../components/footer';
 import './index.css';
 
 const IndexPage = () => (
@@ -16,6 +18,8 @@ const IndexPage = () => (
     <Portfolio />
     <Brides />
     <Schedule />
+    <ContactUs />
+    <Footer />
   </Layout>
 );
 
