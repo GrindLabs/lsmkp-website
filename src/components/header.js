@@ -6,8 +6,6 @@ import Img from 'gatsby-image';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import DateRange from '@material-ui/icons/DateRange';
-import { Container, Grid, Typography } from '@material-ui/core';
-import videoIntro from '../media/intro.mp4';
 
 const useStyles = makeStyles(theme => ({
   header: {
