@@ -149,13 +149,37 @@ const Footer = () => {
               <ListItemLink href="#" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
-                  primary="Aplicativo de Agendamento"
+                  primary="Agendamento"
                 />
               </ListItemLink>
               <ListItemLink href="#" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
-                  primary="Perguntas mais Frequentes"
+                  primary="Serviços para o Cabelo"
+                />
+              </ListItemLink>
+              <ListItemLink href="#" disableGutters={true}>
+                <ListItemText
+                  primaryTypographyProps={{ variant: 'body1' }}
+                  primary="Horários de Atendimento"
+                />
+              </ListItemLink>
+              <ListItemLink href="#" disableGutters={true}>
+                <ListItemText
+                  primaryTypographyProps={{ variant: 'body1' }}
+                  primary="Formas de Atendimento"
+                />
+              </ListItemLink>
+              <ListItemLink href="#" disableGutters={true}>
+                <ListItemText
+                  primaryTypographyProps={{ variant: 'body1' }}
+                  primary="Contrato para Noivas"
+                />
+              </ListItemLink>
+              <ListItemLink href="#" disableGutters={true}>
+                <ListItemText
+                  primaryTypographyProps={{ variant: 'body1' }}
+                  primary="Outras Informações"
                 />
               </ListItemLink>
             </List>
