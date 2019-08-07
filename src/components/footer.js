@@ -37,6 +37,9 @@ const useStyles = makeStyles(theme => ({
   customDivider: {
     backgroundColor: '#fff',
   },
+  listSpacer: {
+    marginTop: '12px',
+  },
 }));
 
 const Footer = () => {
@@ -50,16 +53,16 @@ const Footer = () => {
       <Container fixed>
         <Grid container spacing={2}>
           <Grid item lg={3}>
+            <Typography align="left" variant="h5" color="primary">
+              Vamos agendar?!
+            </Typography>
+            <Divider className={classes.customDivider} variant="fullWidth" />
             <Typography
               align="left"
-              variant="h5"
+              variant="body1"
               color="primary"
-              paragraph={true}
+              className={classes.listSpacer}
             >
-              Vamos agendar?!
-              <Divider className={classes.customDivider} variant="fullWidth" />
-            </Typography>
-            <Typography align="left" variant="body1" color="primary">
               Entre em contato comigo por um dos canais abaixo e terei o maior
               prazer em te atender!
             </Typography>
@@ -96,8 +99,8 @@ const Footer = () => {
           <Grid item lg={3}>
             <Typography align="left" variant="h5" color="primary">
               Seções
-              <Divider className={classes.customDivider} variant="fullWidth" />
             </Typography>
+            <Divider className={classes.customDivider} variant="fullWidth" />
             <List dense={true} className={classes.contact}>
               <ListItemLink href="#" disableGutters={true}>
                 <ListItemText
@@ -140,19 +143,43 @@ const Footer = () => {
           <Grid item lg={3}>
             <Typography align="left" variant="h5" color="primary">
               Informações
-              <Divider className={classes.customDivider} variant="fullWidth" />
             </Typography>
+            <Divider className={classes.customDivider} variant="fullWidth" />
             <List dense={true} className={classes.contact}>
               <ListItemLink href="#" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
-                  primary="Aplicativo de Agendamento"
+                  primary="Agendamento"
                 />
               </ListItemLink>
               <ListItemLink href="#" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
-                  primary="Perguntas mais Frequentes"
+                  primary="Serviços para o Cabelo"
+                />
+              </ListItemLink>
+              <ListItemLink href="#" disableGutters={true}>
+                <ListItemText
+                  primaryTypographyProps={{ variant: 'body1' }}
+                  primary="Horários de Atendimento"
+                />
+              </ListItemLink>
+              <ListItemLink href="#" disableGutters={true}>
+                <ListItemText
+                  primaryTypographyProps={{ variant: 'body1' }}
+                  primary="Formas de Atendimento"
+                />
+              </ListItemLink>
+              <ListItemLink href="#" disableGutters={true}>
+                <ListItemText
+                  primaryTypographyProps={{ variant: 'body1' }}
+                  primary="Contrato para Noivas"
+                />
+              </ListItemLink>
+              <ListItemLink href="#" disableGutters={true}>
+                <ListItemText
+                  primaryTypographyProps={{ variant: 'body1' }}
+                  primary="Outras Informações"
                 />
               </ListItemLink>
             </List>
@@ -160,8 +187,8 @@ const Footer = () => {
           <Grid item lg={3}>
             <Typography align="left" variant="h5" color="primary">
               Formas de Pagamento
-              <Divider className={classes.customDivider} variant="fullWidth" />
             </Typography>
+            <Divider className={classes.customDivider} variant="fullWidth" />
             <List dense={true} className={classes.contact}>
               <ListItem disableGutters={true}>
                 <ListItemIcon className={classes.contact}>
