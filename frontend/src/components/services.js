@@ -36,7 +36,7 @@ const Services = () => {
   const classes = useStyles();
 
   return (
-    <section className={classes.section}>
+    <section id="services" className={classes.section}>
       <Container fixed>
         <Typography align="center" variant="h4" component="h2" color="primary">
           Conheça todos os serviços oferecidos

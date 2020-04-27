@@ -30,7 +30,7 @@ const Hero = ({ title }) => {
   const classes = useStyles();
 
   return (
-    <section className={classes.hero}>
+    <section id="hero" className={classes.hero}>
       <Container fixed>
         <Grid
           container
@@ -63,6 +63,7 @@ const Hero = ({ title }) => {
               color="primary"
               size="large"
               className={classes.actionButton}
+              href="/#schedule"
             >
               Agende seu Horário
             </Button>

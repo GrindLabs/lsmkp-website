@@ -35,7 +35,7 @@ const Brides = () => {
   const classes = useStyles();
 
   return (
-    <section className={classes.section}>
+    <section id="brides" className={classes.section}>
       <Container fixed>
         <Typography
           align="center"

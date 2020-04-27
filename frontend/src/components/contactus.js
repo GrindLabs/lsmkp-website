@@ -30,13 +30,19 @@ const useStyles = makeStyles(theme => ({
   contactIcons: {
     color: '#000',
   },
+  customForm: {
+    width: '100%',
+  },
+  button: {
+    marginTop: '10px',
+  },
 }));
 
 const ContactUs = () => {
   const classes = useStyles();
 
   return (
-    <section className={classes.section}>
+    <section id="contact" className={classes.section}>
       <Container fixed>
         <Grid container spacing={2}>
           <Grid item lg={6}>

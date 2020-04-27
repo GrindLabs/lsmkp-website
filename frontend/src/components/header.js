@@ -59,30 +59,39 @@ const Header = ({ title }) => {
   );
 
   return (
-    <header className={classes.header}>
+    <header id="topMenu" className={classes.header}>
       <AppBar position="absolute" className={classes.appBar}>
         <Toolbar>
           <Img fixed={logoAppBar.childImageSharp.fixed} alt={title} />
           <div className={classes.toolbarButtons}>
-            <Button color="primary" className={classes.button}>
+            <Button
+              color="primary"
+              className={classes.button}
+              href="/#services"
+            >
               Serviços
             </Button>
-            <Button color="primary" className={classes.button}>
+            <Button color="primary" className={classes.button} href="/#studio">
               Studio
             </Button>
-            <Button color="primary" className={classes.button}>
+            <Button
+              color="primary"
+              className={classes.button}
+              href="/#portfolio"
+            >
               Portfólio
             </Button>
-            <Button color="primary" className={classes.button}>
+            <Button color="primary" className={classes.button} href="/#brides">
               Noivas
             </Button>
-            <Button color="primary" className={classes.button}>
+            <Button color="primary" className={classes.button} href="/#contact">
               Contato
             </Button>
             <Button
               variant="contained"
               color="primary"
               className={classes.button}
+              href="/#schedule"
             >
               Agende
               <DateRange className={classes.rightIcon} />

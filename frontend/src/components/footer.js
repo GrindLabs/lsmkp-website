@@ -102,37 +102,37 @@ const Footer = () => {
             </Typography>
             <Divider className={classes.customDivider} variant="fullWidth" />
             <List dense={true} className={classes.contact}>
-              <ListItemLink href="#" disableGutters={true}>
+              <ListItemLink href="/#services" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
                   primary="Serviços"
                 />
               </ListItemLink>
-              <ListItemLink href="#" disableGutters={true}>
+              <ListItemLink href="/#studio" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
                   primary="Studio"
                 />
               </ListItemLink>
-              <ListItemLink href="#" disableGutters={true}>
+              <ListItemLink href="/#portfolio" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
                   primary="Portfólio"
                 />
               </ListItemLink>
-              <ListItemLink href="#" disableGutters={true}>
+              <ListItemLink href="/#brides" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
                   primary="Noivas"
                 />
               </ListItemLink>
-              <ListItemLink href="#" disableGutters={true}>
+              <ListItemLink href="/#schedule" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
                   primary="Agende"
                 />
               </ListItemLink>
-              <ListItemLink href="#" disableGutters={true}>
+              <ListItemLink href="/#contact" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
                   primary="Contato"
@@ -146,37 +146,37 @@ const Footer = () => {
             </Typography>
             <Divider className={classes.customDivider} variant="fullWidth" />
             <List dense={true} className={classes.contact}>
-              <ListItemLink href="#" disableGutters={true}>
+              <ListItemLink href="/information" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
                   primary="Agendamento"
                 />
               </ListItemLink>
-              <ListItemLink href="#" disableGutters={true}>
+              <ListItemLink href="/information" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
                   primary="Serviços para o Cabelo"
                 />
               </ListItemLink>
-              <ListItemLink href="#" disableGutters={true}>
+              <ListItemLink href="/information" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
                   primary="Horários de Atendimento"
                 />
               </ListItemLink>
-              <ListItemLink href="#" disableGutters={true}>
+              <ListItemLink href="/information" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
                   primary="Formas de Atendimento"
                 />
               </ListItemLink>
-              <ListItemLink href="#" disableGutters={true}>
+              <ListItemLink href="/information" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
                   primary="Contrato para Noivas"
                 />
               </ListItemLink>
-              <ListItemLink href="#" disableGutters={true}>
+              <ListItemLink href="/information" disableGutters={true}>
                 <ListItemText
                   primaryTypographyProps={{ variant: 'body1' }}
                   primary="Outras Informações"

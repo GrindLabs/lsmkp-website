@@ -55,7 +55,7 @@ const Schedule = () => {
   };
 
   return (
-    <section className={classes.section}>
+    <section id="schedule" className={classes.section}>
       <Container fixed>
         <Grid container spacing={2}>
           <Grid item xs={12}>

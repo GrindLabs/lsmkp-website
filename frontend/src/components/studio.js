@@ -69,7 +69,7 @@ const Studio = () => {
   });
 
   return (
-    <section className={classes.section}>
+    <section id="studio" className={classes.section}>
       <Container fixed>
         <Typography
           align="center"

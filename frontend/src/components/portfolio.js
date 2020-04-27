@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/styles';
 import { Container, Typography, Grid } from '@material-ui/core';
 import Feed from '../components/feed';
 import Button from '@material-ui/core/Button';
+import LaunchIcon from '@material-ui/icons/Launch';
 
 const useStyles = makeStyles(theme => ({
   section: {
@@ -16,13 +17,16 @@ const useStyles = makeStyles(theme => ({
   button: {
     marginTop: theme.spacing(4),
   },
+  rightIcon: {
+    marginLeft: theme.spacing(1),
+  },
 }));
 
 const Portfolio = () => {
   const classes = useStyles();
 
   return (
-    <section className={classes.section}>
+    <section id="portfolio" className={classes.section}>
       <Container fixed>
         <Typography align="center" variant="h4" component="h2" color="primary">
           Confira o meu trabalho
@@ -46,8 +50,11 @@ const Portfolio = () => {
             color="primary"
             size="large"
             className={classes.button}
+            href="https://instagram.com/lsmakeup"
+            target="_blank"
           >
             Carregar mais
+            <LaunchIcon className={classes.rightIcon} />
           </Button>
         </Grid>
       </Container>
