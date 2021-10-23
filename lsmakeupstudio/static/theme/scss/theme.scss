@@ -1,0 +1,17 @@
+$input-group-addon-bg: #fff;
+
+@import "../../vendor/bootstrap/scss/bootstrap";
+
+$bg-main: $gray-100;
+
+body {
+    background-color: $bg-main;
+}
+
+.input-group>.input-group-text {
+    border-right: none;
+}
+
+.input-group>.form-control {
+    border-left: none;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="{{ SITE_SETTINGS.default_lang }}">
+
+<head>
+  <!-- Google Site setup -->
+  <meta content="{{ SITE_SETTINGS.google_verification }}" name="google-site-verification" />
+
+  <!-- Common setup -->
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <meta content="{{ SITE_SETTINGS.title }}" name="title" />
+  <meta content="{{ SITE_SETTINGS.description }}" name="description" />
+  <meta content="{{ SITE_SETTINGS.keywords }}" name="keywords" />
+  <meta content="index, follow" name="robots" />
+  <link href="{{ SITE_SETTINGS.base_url }}" rel="canonical" />
+  <link href="{{ SITE_SETTINGS.base_url }}" rel="index" title="{{ SITE_SETTINGS.subtitle }}" />
+  <link href="{{ SITE_SETTINGS.base_url }}" rel="base" title="{{ SITE_SETTINGS.subtitle }}" />
+
+  <!-- Facebook Open Graph setup -->
+  <meta content="{{ SITE_SETTINGS.default_lang }}" property="og:locale" />
+  <meta content="website" property="og:type" />
+  <meta content="{{ SITE_SETTINGS.title }}" property="og:title" />
+  <meta content="{{ SITE_SETTINGS.description }}" property="og:description" />
+  <meta content="{{ SITE_SETTINGS.base_url }}" property="og:url" />
+  <meta content="{{ SITE_SETTINGS.logo }}" property="og:image" />
+  <meta content="{{ SITE_SETTINGS.name }}" property="og:name" />
+
+  <!-- Twitter setup -->
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="{{ SITE_SETTINGS.title }}" name="twitter:title" />
+  <meta content="{{ SITE_SETTINGS.description }}" name="twitter:description" />
+  <meta content="{{ SITE_SETTINGS.logo }}" name="twitter:image:src" />
+
+  <!-- Favicon -->
+  <link href="{{ SITE_SETTINGS.favicon }}" rel="shortcut icon" />
+
+  <!-- Include theme -->
+  {% assets 'theme_css' %}
+  <link href="{{ ASSET_URL }}" rel="stylesheet" />
+  {% endassets %}
+
+  <!-- Include vendor -->
+  {% assets 'vendor_css' %}
+  <link href="{{ ASSET_URL }}" rel="stylesheet" />
+  {% endassets %}
+
+  <!-- Include custom CSS -->
+  {% block custom_css %}{% endblock %}
+
+  <!-- Google Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date());
+      (a = s.createElement(o)),
+      (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+    ga("create", "{{ SITE_SETTINGS.google_analytics }}", "auto");
+    ga("send", "pageview");
+  </script>
+  <title>
+    {% block title %}
+    {{ SITE_SETTINGS.title }}
+    {% endblock %}
+  </title>
+</head>
+
+<body>
+  {% from 'macros/system_alert.html' import system_alert %}
+  {{ system_alert() }}
+
+  <!-- The content -->
+  {% block header %}{% endblock %}
+  {% block content %}{% endblock %}
+  {% block footer %}{% endblock %}
+
+  <!-- Include vendor scripts -->
+  {% assets "vendor_js" %}
+  <script src="{{ ASSET_URL }}" type="text/javascript"></script>
+  {% endassets %}
+
+  <!-- Include theme scripts -->
+  {% assets 'theme_js' %}
+  <script src="{{ ASSET_URL }}" type="text/javascript"></script>
+  {% endassets %}
+
+  <!-- Include custom scripts -->
+  {% block custom_js %}{% endblock %}
+</body>
+
+</html>

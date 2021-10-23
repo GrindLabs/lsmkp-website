@@ -1,0 +1,12 @@
+{% macro navbar_simple(title, return_to) %}
+<header id="navbar-simple">
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+            <div class="uk-navbar-item">
+                <a href="{{ return_to }}" uk-icon="icon: arrow-left; ratio: 1.5" class="uk-margin-small-right"></a>
+                <span class="uk-text-large">{{ title }}</span>
+            </div>
+        </div>
+    </nav>
+</header>
+{% endmacro %}

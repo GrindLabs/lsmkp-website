@@ -1,0 +1,91 @@
+<div class="row">
+  <div class="col-12">
+    <h2>Dados Pessoais</h2>
+    <h6 class="text-muted">Registre suas informações pessoais</h6>
+  </div>
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <form class="row g-3 needs-validation" method="POST" novalidate>
+          {{ form.csrf_token }}
+          <div class="col-xs-12 col-md-6">
+            <div class="has-validation">
+              {{ form.first_name.label(class_='form-label') }}
+              {{ form.first_name(class_='form-control' if not form.first_name.errors else 'form-control is-invalid', min=4, max=20, maxlength=20, placeholder='Fulano') }}
+              {% if form.first_name.errors %}
+              {% for error in form.first_name.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+              {% endfor %}
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="has-validation">
+              {{ form.last_name.label(class_='form-label') }}
+              {{ form.last_name(class_='form-control' if not form.last_name.errors else 'form-control is-invalid', min=4, max=20, maxlength=20, placeholder='de Tal') }}
+              {% if form.last_name.errors %}
+              {% for error in form.last_name.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+              {% endfor %}
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="has-validation">
+              {{ form.birthday.label(class_='form-label') }}
+              {{ form.birthday(class_='form-control' if not form.birthday.errors else 'form-control is-invalid') }}
+              {% if form.birthday.errors %}
+              {% for error in form.birthday.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+              {% endfor %}
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="has-validation">
+              {{ form.phone.label(class_='form-label') }}
+              {{ form.phone(class_='form-control' if not form.phone.errors else 'form-control is-invalid', min=11, max=11, maxlength=11, placeholder='11999998888') }}
+              {% if form.phone.errors %}
+              {% for error in form.phone.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+              {% endfor %}
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="has-validation">
+              {{ form.genre.label(class_='form-label') }}
+              {{ form.genre(class_='form-select' if not form.genre.errors else 'form-control is-invalid') }}
+              {% if form.genre.errors %}
+              {% for error in form.genre.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+              {% endfor %}
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="has-validation">
+              {{ form.orientation.label(class_='form-label') }}
+              {{ form.orientation(class_='form-select' if not form.orientation.errors else 'form-control is-invalid') }}
+              {% if form.orientation.errors %}
+              {% for error in form.orientation.errors %}
+              <div class="invalid-feedback">{{ error }}</div>
+              {% endfor %}
+              {% endif %}
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer bg-white border-top-0 text-center">
+        <div class="row gx-1">
+          <div class="col-6 d-grid">
+            <button type="button" class="btn btn-light">Cancelar</button>
+          </div>
+          <div class="col-6 d-grid">
+            <button type="button" class="btn btn-primary">Salvar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

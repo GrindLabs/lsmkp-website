@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  lsmakeupstudio-mysql:
+    container_name: lsmakeupstudio-mysql
+    image: mysql:8.0.21
+    restart: always
+    env_file: .env
+    ports:
+      - '3306:3306'

@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "autosize": "^4.0.2",
+    "bootstrap": "^5.1.0",
+    "cropperjs": "^1.5.11",
+    "dropzone": "^5.7.2",
+    "nanogallery2": "^3.0.5",
+    "rx-jquery": "^1.1.7",
+    "rxjs": "^6.6.3",
+    "strophe.js": "^1.4.2",
+    "uglify-js": "^3.12.1"
+  }
+}

@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<main id="sw-register">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">
+            Dados Pessoais
+            <span class="badge rounded-pill bg-danger float-end">
+              <i class="fas fa-exclamation"></i>
+            </span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            Documentos
+            <span class="badge rounded-pill bg-danger float-end">
+              <i class="fas fa-exclamation"></i>
+            </span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            Dados para Pagamento
+            <span class="badge rounded-pill bg-danger float-end">
+              <i class="fas fa-exclamation"></i>
+            </span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            Dados do Perfil
+            <span class="badge rounded-pill bg-danger float-end">
+              <i class="fas fa-exclamation"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 mx-auto">
+        {% if step == 'documents' %}
+        {% include "sw/register/documents.html" %}
+        {% elif step == 'payment' %}
+        {% include "sw/register/payment.html" %}
+        {% elif step == 'profile' %}
+        {% include "sw/register/profile.html" %}
+        {% elif not step or step == 'personal' %}
+        {% include "sw/register/personal.html" %}
+        {% else %}
+        {% include "404_content.html" %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

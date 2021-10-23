@@ -1,0 +1,41 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+autopep8 = "*"
+
+[packages]
+Flask = "*"
+gunicorn = "*"
+Flask-HTTPAuth = "*"
+Flask-Limiter = "*"
+Flask-SQLAlchemy = "*"
+flask-mongoengine = "*"
+Flask-Caching = "*"
+Flask-Bcrypt = "*"
+pytest = "*"
+requests = "*"
+PyYAML = "*"
+PyMySQL = "*"
+python-dotenv = "*"
+cryptography = "*"
+marshmallow-enum = "*"
+mailjet-rest = "*"
+Flask-Uploads = "*"
+boto3 = "*"
+python-magic = "*"
+Flask-Cors = "*"
+Flask-Login = "*"
+Flask-Assets = "*"
+Flask-WTF = "*"
+jsmin = "*"
+cssmin = "*"
+libsass = "*"
+mercadopago = "*"
+hashids = "*"
+marshmallow = "*"
+
+[requires]
+python_version = "3.9"
